@@ -83,7 +83,9 @@ document.documentElement.classList.add('js');
       'Assunto: ' + form.motivo.value + '\n' +
       'Melhor período: ' + periodo;
 
-    window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    var url = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg);
+    document.getElementById('form-wa').href = url;
+    window.open(url, '_blank', 'noopener');
     ok.hidden = false;
     form.reset();
   });

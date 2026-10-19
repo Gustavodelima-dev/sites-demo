@@ -143,7 +143,9 @@ var WHATSAPP = '5547999990001';
       'Precisa de: ' + nec.join(', ') +
       (form.obs.value.trim() ? '\n\nObservações: ' + form.obs.value.trim() : '');
 
-    window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    var url = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg);
+    document.getElementById('form-wa').href = url;
+    window.open(url, '_blank', 'noopener');
     ok.hidden = false;
     form.reset();
   });
