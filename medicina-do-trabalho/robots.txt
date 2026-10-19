@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gustavodelima-dev.github.io/sites-demo/medicina-do-trabalho/sitemap.xml

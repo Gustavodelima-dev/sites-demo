@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formato Web | Sites demonstrativos</title>
+  <meta name="description" content="Sites institucionais demonstrativos da Formato Web para empresas de Rio Negro, Mafra e região.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#14181f;--muted:#566070;--line:#dfe3ea;--bg:#fff;--bg-alt:#f4f6f9}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    main{width:min(100% - 32px,960px);margin:0 auto;padding:clamp(3rem,8vw,6rem) 0}
+    h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.05;letter-spacing:-.03em;margin:0 0 1rem;font-weight:800}
+    p.lead{color:var(--muted);font-size:1.15rem;max-width:52ch;margin:0}
+    ul{list-style:none;padding:0;margin:3rem 0 0;display:grid;gap:1rem}
+    a.demo{display:grid;grid-template-columns:auto 1fr auto;gap:1.25rem;align-items:center;padding:1.5rem;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:inherit;transition:border-color .2s,background-color .2s}
+    a.demo:hover{border-color:var(--ink);background:var(--bg-alt)}
+    a.demo:focus-visible{outline:3px solid #2b7bd6;outline-offset:3px}
+    .cor{width:52px;height:52px;border-radius:12px}
+    strong{display:block;font-size:1.2rem}
+    span{color:var(--muted);font-size:.97rem}
+    .ver{font-weight:700;white-space:nowrap}
+    footer{margin-top:4rem;color:var(--muted);font-size:.9rem}
+    @media (max-width:560px){a.demo{grid-template-columns:auto 1fr}.ver{grid-column:1/-1}}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Formato Web</h1>
+    <p class="lead">Sites institucionais para empresas de Rio Negro, Mafra e região. Abaixo, dois projetos demonstrativos com empresas fictícias.</p>
+    <ul>
+      <li>
+        <a class="demo" href="odontologia/">
+          <div class="cor" style="background:#1d4a41" aria-hidden="true"></div>
+          <div><strong>Sereno Odontologia</strong><span>Clínica odontológica · paciente final · agendamento pelo WhatsApp</span></div>
+          <span class="ver">Abrir site</span>
+        </a>
+      </li>
+      <li>
+        <a class="demo" href="medicina-do-trabalho/">
+          <div class="cor" style="background:#0f2b46;box-shadow:inset 0 -10px 0 #ffc21a" aria-hidden="true"></div>
+          <div><strong>Prumo Saúde Ocupacional</strong><span>Medicina do trabalho · empresas · diagnóstico interativo e orçamento</span></div>
+          <span class="ver">Abrir site</span>
+        </a>
+      </li>
+    </ul>
+    <footer>Empresas, profissionais e contatos destes sites são fictícios.</footer>
+  </main>
+</body>
+</html>
